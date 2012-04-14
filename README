@@ -1,7 +1,7 @@
 This module is designed to parse through a directory
 of csv files containing transaction information for "Square" card reader transactions.
 
-The files contain the following details, each in a different cell in one row:
+The csv columns contain the following details, with one transaction per row:
 - user_id: Username for the merchant using Squares card reader
 - payment_id: Unique ID code for that individual transaction
 - payment_amount: Amount processed
@@ -18,5 +18,4 @@ benjohnston1985, f394fn93, 13.99, TRUE, 05/11/2011
 Percentile information. I used the following paper for determining a percentile
 distribution function table:
 
-http://www.stanford.edu/class/archive/anthsci/anthsci192/
-anthsci192.1064/handouts/calculating%20percentiles.pdf
+http://www.stanford.edu/class/archive/anthsci/anthsci192/anthsci192.1064/handouts/calculating%20percentiles.pdf
