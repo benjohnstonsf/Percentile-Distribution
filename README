@@ -1,0 +1,22 @@
+This module is designed to parse through a directory
+of csv files containing transaction information for "Square" card reader transactions.
+
+The files contain the following details, each in a different cell in one row:
+- user_id: Username for the merchant using Squares card reader
+- payment_id: Unique ID code for that individual transaction
+- payment_amount: Amount processed
+- card_present: Was the card present. Data contains a "TRUE" if it was, empty if not.
+  if customer used their account with that merchant to pay instead of their
+  credit card.
+- created_at: Date of transaction
+
+There is one transaction per row.
+A sample row would contain five cells, here are some sample values:
+
+benjohnston1985, f394fn93, 13.99, TRUE, 05/11/2011
+
+Percentile information. I used the following paper for determining a percentile
+distribution function table:
+
+http://www.stanford.edu/class/archive/anthsci/anthsci192/
+anthsci192.1064/handouts/calculating%20percentiles.pdf
